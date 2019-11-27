@@ -23,4 +23,6 @@ case $action in
         V_natport_dis ;;
     show )
         V_natport_show | egrep "$profilename|$private_ip";;
+	* )
+	exit ;;
 esac
