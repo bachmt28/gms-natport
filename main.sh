@@ -13,8 +13,6 @@ source $DIR/function.sh
 
 
 ##main
-echo $action
-echo $private_ip
 case $action in
     add )
         V_natport_add && V_natport_edit && V_natport_ena
