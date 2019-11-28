@@ -9,8 +9,13 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 source $DIR/var.sh
 source $DIR/function.sh
 
-#Check prerequire
 
+function V_natport_show()
+{
+echo -e "enable
+configure nat
+port_redirect show" | sshpass -p $PASSWORD ssh admin@$virgo3900 -p 2222
+}
 
 ##main
 case $action in
@@ -28,7 +33,7 @@ case $action in
     disable )
         V_natport_dis ;;
     show )
-        V_natport_show | egrep "$private_ip";;
+        V_natport_show;;
 	* )
 	exit ;;
 esac
