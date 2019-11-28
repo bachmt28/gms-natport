@@ -9,13 +9,6 @@ source $DIR/var.sh
 source $DIR/function.sh
 
 
-function V_natport_show()
-{
-echo -e "enable
-configure nat
-port_redirect show" | sshpass -p $PASSWORD ssh admin@$virgo3900 -p 2222
-}
-
 ##main
 case $action in
     add )
