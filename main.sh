@@ -13,6 +13,7 @@ source $DIR/function.sh
 
 
 ##main
+echo $action
 case $action in
     add )
         V_natport_add && V_natport_edit && V_natport_ena
