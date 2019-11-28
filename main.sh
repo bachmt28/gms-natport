@@ -6,10 +6,8 @@ set -o pipefail
 
 echo 'This is main part. Script run aldready !'
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-echo $DIR
-exit
-source var.sh
-source function.sh
+source $DIR/var.sh
+source $DIR/function.sh
 
 #Check prerequire
 
