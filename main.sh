@@ -28,7 +28,7 @@ case $action in
     disable )
         V_natport_dis ;;
     show )
-        V_natport_show | egrep "$profilename|$private_ip";;
+        V_natport_show | egrep "$private_ip";;
 	* )
 	exit ;;
 esac
