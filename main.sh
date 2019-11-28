@@ -1,5 +1,8 @@
 #!/bin/bash
 #jenkins quiet period feature
+set -e
+set -u 
+set -o pipefail
 
 echo 'This is main part. Script run aldready !'
 source var.sh
