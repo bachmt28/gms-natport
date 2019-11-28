@@ -5,6 +5,7 @@ set -u
 set -o pipefail
 
 echo 'This is main part. Script run aldready !'
+echo $(dirname $0)
 source var.sh
 source function.sh
 
