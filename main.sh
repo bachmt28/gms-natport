@@ -1,5 +1,7 @@
+#!/bin/bash
 #jenkins quiet period feature
 
+echo 'This is main part. Script run aldready !'
 source var.sh
 source function.sh
 
