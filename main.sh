@@ -5,7 +5,8 @@ set -u
 set -o pipefail
 
 echo 'This is main part. Script run aldready !'
-echo $(dirname "$0")
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+echo $DIR
 exit
 source var.sh
 source function.sh
