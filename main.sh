@@ -12,10 +12,6 @@ echo 'This is main part. Script run aldready !
 #####################
 #####################
 '
-
-
-
-
 mkdir -p $WSP/listnatport.csv
 
 ##main
