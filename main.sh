@@ -32,7 +32,7 @@ case $action in
     disable )
         V_natport_dis ;;
     show )
-        V_natport_show;; | egrep "$profilename|$private_port"
+        V_natport_show;; | grep -e "$profilename"
 	* )
 	exit ;;
 esac
