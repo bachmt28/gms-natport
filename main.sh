@@ -12,7 +12,7 @@ echo 'This is main part. Script run aldready !
 #####################
 #####################
 '
-mkdir -p $WSP/listnatport.csv
+touch $WSP/listnatport.csv
 
 ##main
 case $action in

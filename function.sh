@@ -28,9 +28,9 @@ echo -e "enable
 configure nat
 port_redirect $profilename
 set public_prof $public_prof
-set private_ip $private_ip 
+set private_ip $private_ip
 set proto $proto
-set public_port_start $public_port_start 
+set public_port_start $public_port_start
 set public_port_end $public_port_end
 set private_port $private_port" | sshpass -p $PASSWORD ssh admin@$virgo3900 -p 2222
 }
