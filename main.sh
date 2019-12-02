@@ -1,6 +1,6 @@
 #!/bin/bash
 #jenkins quiet period feature
-set -e
+set +e
 set -u 
 
 echo 'This is main part. Script run aldready !
@@ -32,7 +32,7 @@ case $action in
     disable )
         V_natport_dis ;;
     show )
-        V_natport_show | grep -e "$profilename|$private_ip"
+        V_natport_show 
 		;;
 	* )
 	exit ;;
