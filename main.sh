@@ -3,7 +3,10 @@
 set -e
 set -u 
 
-echo 'This is main part. Script run aldready !'
+echo 'This is main part. Script run aldready !
+#####################
+#####################
+'
 
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
@@ -14,7 +17,9 @@ source $DIR/function.sh
 ##main
 case $action in
     add )
-        V_natport_add && V_natport_edit && V_natport_ena
+        V_natport_add
+		V_natport_edit
+		V_natport_ena
 		echo "$profilename;date +%d-%m-%Y;$EndDate" >> $WSP/listnatport.csv
 		;;
     delete )
@@ -27,7 +32,7 @@ case $action in
     disable )
         V_natport_dis ;;
     show )
-        V_natport_show;;
+        V_natport_show;; | egrep "$profilename|$private_port"
 	* )
 	exit ;;
 esac
