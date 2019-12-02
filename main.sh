@@ -2,7 +2,7 @@
 #jenkins quiet period feature
 set +e
 set -u 
-$WSP/listnatport.csv
+mkdir -p $WSP/listnatport.csv
 echo 'This is main part. Script run aldready !
 #####################
 #####################
